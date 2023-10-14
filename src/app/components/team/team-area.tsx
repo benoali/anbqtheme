@@ -5,7 +5,6 @@ import team_data from "@/data/team-data";
 import bg from '@/assets/img/bg/team_bg.jpg';
 import TextAnimation from "../common/text-animation";
 
-
 const TeamArea = () => {
   return (
     <section

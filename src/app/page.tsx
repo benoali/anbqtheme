@@ -1,3 +1,5 @@
+'use client';
+
 import Wrapper from "@/layout/wrapper";
 import Header from "@/layout/header/header";
 import HeroBanner from "./components/hero-banner/hero-banner";
@@ -10,10 +12,50 @@ import VideoArea from "./components/video/video-area";
 import RoadMapArea from "./components/road-map/road-map-area";
 import TrendingNftItems from "./components/nft-item/trending-nft-items";
 import TokenDist from "./components/token-dist/token-dist";
+import ConnectWallet from "./components/connect-wallet/connect-wallet";
 import Footer from "@/layout/footer/footer";
+
+import '@rainbow-me/rainbowkit/styles.css';
+import {
+    getDefaultWallets,
+    RainbowKitProvider,
+} from '@rainbow-me/rainbowkit';
+import { configureChains, createConfig, WagmiConfig } from 'wagmi';
+import {
+    mainnet,
+    polygon,
+    optimism,
+    arbitrum,
+    base,
+    zora,
+} from 'wagmi/chains';
+import { alchemyProvider } from 'wagmi/providers/alchemy';
+import { publicProvider } from 'wagmi/providers/public';
+
+const { chains, publicClient } = configureChains(
+    [mainnet, polygon, optimism, arbitrum, base, zora],
+    [
+        alchemyProvider({ apiKey: 'yhz7HGpri0o8UnOh7MeJ4z2DMurUFS1Y' }),
+        publicProvider()
+    ]
+);
+
+const { connectors } = getDefaultWallets({
+    appName: 'walid',
+    projectId: 'a02d95cd15e5dac0e2755f468f599a07',
+    chains
+});
+
+const wagmiConfig = createConfig({
+    autoConnect: true,
+    connectors,
+    publicClient
+})
 
 export default function Home() {
   return (
+    <WagmiConfig config={wagmiConfig}>
+        <RainbowKitProvider chains={chains}>
     <Wrapper>
       {/* header start */}
       <Header />
@@ -24,6 +66,10 @@ export default function Home() {
         {/* hero banner start */}
         <HeroBanner />
         {/* hero banner end */}
+
+        {/* connect-wallet start */}
+        <ConnectWallet />
+        {/* connect-wallet end */}
 
         {/* nft item area start */}
         <NftItemArea />
@@ -70,5 +116,7 @@ export default function Home() {
       <Footer/>
       {/* footer end */}
     </Wrapper>
+        </RainbowKitProvider>
+    </WagmiConfig>
   );
 }
