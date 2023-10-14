@@ -24,7 +24,7 @@ const OffCanvas = ({isOffCanvasOpen,setIsOffCanvasOpen}:IProps) => {
               <div className="offCanvas__top">
                   <div className="offCanvas__logo logo">
                       <Link href="/">
-                        <Image src={logo} alt="Logo" width={177} height={40} />
+                        <Image src={logo} alt="Logo" width={40} height={40} />
                       </Link>
                   </div>
                   <div className="offCanvas__toggle" onClick={() => handleCloseOffCanvas('/assets/audio/remove.wav')}>
@@ -36,8 +36,8 @@ const OffCanvas = ({isOffCanvasOpen,setIsOffCanvasOpen}:IProps) => {
                   <div className="offCanvas__contact">
                       <h4 className="small-title">CONTACT US</h4>
                       <ul className="offCanvas__contact-list list-wrap">
-                          <li><Link href="tel:93332225557">+9 333 222 5557</Link></li>
-                          <li><Link href="mailto:info@webmail.com">info@webmail.com</Link></li>
+                          <li><Link href="tel:0033764538495">0033764538495</Link></li>
+                          <li><Link href="mailto:info@webmail.com">walid@mail.com</Link></li>
                           <li>New Central Park W7 Street,New York</li>
                       </ul>
                   </div>
@@ -56,7 +56,7 @@ const OffCanvas = ({isOffCanvasOpen,setIsOffCanvasOpen}:IProps) => {
                   </ul>
               </div>
               <div className="offCanvas__copyright">
-                  <p>Copyright © {new Date().getFullYear()} - By <span>MYKD</span></p>
+                  <p>Copyright © {new Date().getFullYear()} - By <span>ANBQ</span></p>
               </div>
           </div>
       </div>

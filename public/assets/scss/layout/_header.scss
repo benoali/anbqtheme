@@ -300,7 +300,8 @@
         display: inline-block;
     }
     & img {
-        max-width: 177px;
+        max-width: 100px;
+        max-height: 100px;
     }
 }
 .tg-sticky-menu {

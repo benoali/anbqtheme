@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image';
-import nft_1 from '@/assets/img/nft/nft_img01.jpg';
-import nft_2 from '@/assets/img/nft/nft_img02.jpg';
-import nft_3 from '@/assets/img/nft/nft_img03.jpg';
+import nft_1 from '@/assets/img/nft/nft1.png';
+import nft_2 from '@/assets/img/nft/nft2.png';
+import nft_3 from '@/assets/img/nft/nft3.png';
 import nft_4 from '@/assets/img/nft/nft_img04.jpg';
 import nft_5 from '@/assets/img/nft/nft_img05.jpg';
 import nft_6 from '@/assets/img/nft/nft_img06.jpg';
@@ -20,32 +20,36 @@ export interface INftType {
   creator_name: string;
   eth: number;
   trending?: boolean;
+  classcss?: string;
 }
 
 const nft_data:INftType[] = [
   {
     id:1,
     img:nft_1,
-    title:'wolf gaming art',
+    title:'ant dec 1',
     creator:creator_1,
-    creator_name:'Alax Max',
-    eth:1.002
+    creator_name:'Wal RAM',
+    eth:1.002,
+    classcss: 'item__thumb'
   },
   {
     id:2,
     img:nft_2,
-    title:'FOREST PRINCESS',
+    title:'BABY ANT 22',
     creator:creator_1,
-    creator_name:'Alax Max',
-    eth:1.053
+    creator_name:'ABD',
+    eth:1.,
+    classcss: 'nft-item__bgmv'
   },
   {
     id:3,
     img:nft_3,
-    title:'GIRL FIREFLY ART',
+    title:'ANTO-MAN',
     creator:creator_1,
-    creator_name:'Alax Max',
-    eth:1.024
+    creator_name:'MELO',
+    eth:1.024,
+    classcss: 'nft-item__bggr'
   },
   // trending
   {

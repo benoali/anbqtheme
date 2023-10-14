@@ -49,37 +49,37 @@ const Header = ({style_2=false}:{style_2?:boolean}) => {
                 <nav className="tgmenu__nav">
                   <div className="logo">
                     <Link href="/">
-                      <Image src={logo} alt="Logo" style={{height:'auto'}} />
+                      <Image src={logo} alt="Logo" style={{height:'100', width:'100'}} />
                     </Link>
                   </div>
                   <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
-                    <ul className="navigation">
+                    { <ul className="navigation">
                       {menu_data.map((menu) =>
-                        menu.sub_menu ? (
-                          <li
-                            key={menu.id}
-                            className={`menu-item ${menu.sub_menu && menu.sub_menu.some(sub => pathname === sub.link) ? 'menu-item-has-children active' : ''}`}
-                          >
-                            <Link href="#">{menu.title}</Link>
-                            <ul className="sub-menu">
-                              {menu.sub_menu.map((sub, i) => (
-                                <li key={i} className={pathname === sub.link ? 'active' : ''}>
-                                  <Link href={sub.link}>{sub.title}</Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </li>
-                        ) : (
-                          <li key={menu.id} className={pathname === menu.link ? 'active' : ''}>
-                            <Link href={menu.link}>{menu.title}</Link>
-                          </li>
-                        )
+                          menu.sub_menu ? (
+                              <li
+                                  key={menu.id}
+                                  className={`menu-item ${menu.sub_menu && menu.sub_menu.some(sub => pathname === sub.link) ? 'menu-item-has-children active' : ''}`}
+                              >
+                                <Link href={menu.link}>{menu.title}</Link>
+                                <ul className="sub-menu">
+                                  {menu.sub_menu.map((sub, i) => (
+                                      <li key={i} className={pathname === sub.link ? 'active' : ''}>
+                                        <Link href={sub.link}>{sub.title}</Link>
+                                      </li>
+                                  ))}
+                                </ul>
+                              </li>
+                          ) : (
+                              <li key={menu.id} className={pathname === menu.link ? 'active' : ''}>
+                                <Link href={menu.link}>{menu.title}</Link>
+                              </li>
+                          )
                       )}
-                    </ul>
+                    </ul> }
                   </div>
                   <div className="tgmenu__action d-none d-md-block">
                     <ul className="list-wrap">
-                      <li className="search">
+                      {/* <li className="search">
                         <a onClick={() => handleOpenSearch('/assets/audio/click.wav')} className="cursor-pointer">
                           <i className="flaticon-search-1"></i>
                         </a>
@@ -89,7 +89,7 @@ const Header = ({style_2=false}:{style_2?:boolean}) => {
                           {style_2 && <SvgIconCom icon={shape} id="svg-2" />}
                           <i className="flaticon-edit"></i> ~sing in
                         </Link>
-                      </li>
+                      </li>*/}
                       <li className="side-toggle-icon" onClick={()=> handleOpenOffCanvas('/assets/audio/click.wav')}>
                         <span></span>
                         <span></span>

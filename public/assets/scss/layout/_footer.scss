@@ -129,6 +129,12 @@
                             }
                         }
                     }
+                    &:nth-child(4n+5) {
+                        & .footer-logo img {
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
                 }
             }
         }

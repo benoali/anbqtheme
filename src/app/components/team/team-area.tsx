@@ -5,11 +5,12 @@ import team_data from "@/data/team-data";
 import bg from '@/assets/img/bg/team_bg.jpg';
 import TextAnimation from "../common/text-animation";
 
+
 const TeamArea = () => {
   return (
     <section
       className="team__area team-bg section-pt-130 section-pb-100"
-      style={{backgroundImage:`url(${bg.src})`}}
+      style={{backgroundImage:`url(${bg.src})`}} id="team"
     >
       <div className="container">
         <div className="row justify-content-center">
@@ -38,6 +39,9 @@ const TeamArea = () => {
                     <Link href="/team-details">{t.title}</Link>
                   </h4>
                   <span className="designation">{t.subtitle}</span>
+                  {t.linkedin != '' &&
+                      <Link href={t.linkedin} target="_blank">linkedin</Link>
+                  }
                 </div>
               </div>
             </div>

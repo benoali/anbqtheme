@@ -3172,3 +3172,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+.nft-item__thumb img {
+  max-height: 200px !important;
+  border-radius: 8px;
+  max-height: 232px;
+  max-width: 184px;
+  background-color: #FFCD66;
+}
+
+.nft-item__thumb {
+  background-color: #FFCC68 !important;
+  border-radius: 8px;
+  max-height: 200px !important;
+}
+
+
+.nft-item__bgmv {
+  background-color: #8872FB !important;
+  border-radius: 8px;
+  max-height: 200px !important;
+}
+
+
+.nft-item__bggr {
+  background-color: #47C26E !important;
+  border-radius: 8px;
+  max-height: 200px !important;
+}

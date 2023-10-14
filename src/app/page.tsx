@@ -9,6 +9,7 @@ import area_bg from "@/assets/img/bg/area_bg01.jpg";
 import VideoArea from "./components/video/video-area";
 import RoadMapArea from "./components/road-map/road-map-area";
 import TrendingNftItems from "./components/nft-item/trending-nft-items";
+import TokenDist from "./components/token-dist/token-dist";
 import Footer from "@/layout/footer/footer";
 
 export default function Home() {
@@ -27,6 +28,10 @@ export default function Home() {
         {/* nft item area start */}
         <NftItemArea />
         {/* nft item area end */}
+
+        {/* token dist area start */}
+        <TokenDist />
+        {/* token dist area end */}
 
         {/* area-background-start */}
         <div

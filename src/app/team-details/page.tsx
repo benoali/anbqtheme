@@ -11,50 +11,50 @@ import VideoArea from "../components/video/video-area";
 import TeamArea from "../components/team/team-area";
 
 export const metadata: Metadata = {
-  title: "Team Details Page",
+    title: "Team Details Page",
 };
 
 export default function TeamDetailsPage() {
-  return (
-    <Wrapper>
-      {/* header start */}
-      <Header />
-      {/* header end */}
+    return (
+        <Wrapper>
+            {/* header start */}
+            <Header />
+            {/* header end */}
 
-      {/* main area start */}
-      <main className="main--area">
-        {/* breadcrumb area start */}
-        <BreadcrumbArea
-          title="SHAKH DANIAL"
-          subtitle="TEAM DETAILS"
-          bg={brd_bg}
-          brd_img={brd_img}
-        />
-        {/* breadcrumb area end */}
+            {/* main area start */}
+            <main className="main--area">
+                {/* breadcrumb area start */}
+                <BreadcrumbArea
+                    title="SHAKH DANIAL"
+                    subtitle="TEAM DETAILS"
+                    bg={brd_bg}
+                    brd_img={brd_img}
+                />
+                {/* breadcrumb area end */}
 
-        {/* team info start */}
-        <TeamInfoArea />
-        {/* team info end */}
+                {/* team info start */}
+                <TeamInfoArea />
+                {/* team info end */}
 
-        {/* team details area start */}
-        <TeamDetailsArea />
-        {/* team details area end */}
+                {/* team details area start */}
+                <TeamDetailsArea />
+                {/* team details area end */}
 
-        {/* video area start */}
-        <VideoArea />
-        {/* video area end */}
+                {/* video area start */}
+                <VideoArea />
+                {/* video area end */}
 
-        {/* team area start */}
-        <TeamArea />
-        {/* team area end */}
+                {/* team area start */}
+                <TeamArea />
+                {/* team area end */}
 
-        {/*  */}
-      </main>
-      {/* main area end */}
+                {/*  */}
+            </main>
+            {/* main area end */}
 
-      {/* footer start */}
-      <Footer />
-      {/* footer end */}
-    </Wrapper>
-  );
+            {/* footer start */}
+            <Footer />
+            {/* footer end */}
+        </Wrapper>
+    );
 }

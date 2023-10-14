@@ -62,7 +62,7 @@ const FooterTwo = () => {
                         <div className="footer-el-widget text-start text-md-center widget_nav_menu">
                             <div className="footer-el-logo mb-35">
                                 <Link href="/">
-                                  <Image src={logo} alt="Mykd" style={{height:'auto'}}/>
+                                  <Image src={logo} alt="Anbq" style={{height:'auto'}}/>
                                 </Link>
                             </div>
                             <div className="footer-el-menu">
@@ -92,7 +92,7 @@ const FooterTwo = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="copyright__text text-center text-lg-start">
-                            <p>Copyright © {new Date().getFullYear()} - All Rights Reserved By <span>Mykd</span></p>
+                            <p>Copyright © {new Date().getFullYear()} - All Rights Reserved By <span>Anbq</span></p>
                         </div>
                     </div>
                     <div className="col-lg-6">
