@@ -56,7 +56,7 @@ const OffCanvas = ({isOffCanvasOpen,setIsOffCanvasOpen}:IProps) => {
                   </ul>
               </div>
               <div className="offCanvas__copyright">
-                  <p>Copyright © {new Date().getFullYear()} - By <span>MYKD</span></p>
+                  <p>Copyright © {new Date().getFullYear()} - By <span>ANBQ</span></p>
               </div>
           </div>
       </div>

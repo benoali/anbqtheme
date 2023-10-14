@@ -12,7 +12,7 @@ const ContactArea = () => {
               <h2 className="overlay-title">
                 <span>join us</span>
               </h2>
-              <h2 className="title">CONTACT US AND FIND YOUR mykd</h2>
+              <h2 className="title">CONTACT US AND FIND YOUR anbq</h2>
               <p>
                 Axcepteur sint occaecat atat non proident, sunt culpa officia
                 deserunt mollit anim id est labor umLor emdolor

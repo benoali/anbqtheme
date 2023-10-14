@@ -26,11 +26,11 @@ const HeroBanner = () => {
                     <div className="row justify-content-between">
                         <div className="col-lg-6">
                             <div className="slider__content">
-                                <h6 className="sub-title wow fadeInUp" data-wow-delay=".2s">live gaming</h6>
-                                <h2 className="title wow fadeInUp" data-wow-delay=".5s">steaming</h2>
+                                <h6 className="sub-title wow fadeInUp" data-wow-delay=".2s">Jouer en direct</h6>
+                                <h2 className="title wow fadeInUp" data-wow-delay=".5s">MISER, JOUER</h2>
                                 <p className="wow fadeInUp" data-wow-delay=".8s">video games online</p>
                                 <div className="slider__btn wow fadeInUp" data-wow-delay="1.2s">
-                                    <Link href="/contact" className="tg-btn-1"><span>contact us</span></Link>
+                                    <Link href="/contact" className="tg-btn-1"><span>miser</span></Link>
                                 </div>
                             </div>
                         </div>
