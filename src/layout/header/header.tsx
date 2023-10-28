@@ -3,7 +3,7 @@ import React,{useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import menu_data from "@/data/menu-data";
-import logo from '@/assets/img/logo/logo.png';
+import logo from '@/assets/img/logo/logo_anbq_tr.png';
 import useSticky from "@/hooks/use-sticky";
 import {usePathname} from 'next/navigation'
 import SearchPopup from "@/app/components/common/search-popup";
@@ -49,7 +49,7 @@ const Header = ({style_2=false}:{style_2?:boolean}) => {
                 <nav className="tgmenu__nav">
                   <div className="logo">
                     <Link href="/">
-                      <Image src={logo} alt="Logo" style={{height:'100', width:'100'}} />
+                      <Image src={logo} alt="Logo" />
                     </Link>
                   </div>
                   <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">

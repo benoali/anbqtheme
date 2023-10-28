@@ -3,7 +3,10 @@ import React,{useState} from 'react';
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 import { MouseParallaxContainer,MouseParallaxChild } from 'react-parallax-mouse';
+import slider_bg from '@/assets/img/slider/bg_slider.jpg';
+/*
 import slider_bg from '@/assets/img/slider/slider_bg.jpg';
+*/
 import slider_img from '@/assets/img/slider/slider1_.png';
 import shape_1 from '@/assets/img/slider/slider_shape01.png';
 import shape_2 from '@/assets/img/slider/slider_shape02.png';
@@ -12,6 +15,8 @@ import shape_4 from '@/assets/img/slider/slider_shape04.png';
 import logo_1 from '@/assets/img/brand/brand_logo01.png';
 import logo_2 from '@/assets/img/brand/brand_logo02.png';
 import logo_3 from '@/assets/img/brand/brand_logo03.png';
+
+import ConnectWallet from "../connect-wallet/connect-wallet";
 
 // brands
 const brands:StaticImageData[] = [logo_1,logo_2,logo_3]
@@ -26,11 +31,12 @@ const HeroBanner = () => {
                     <div className="row justify-content-between">
                         <div className="col-lg-6">
                             <div className="slider__content">
-                                <h6 className="sub-title wow fadeInUp" data-wow-delay=".2s">Jouer en direct</h6>
-                                <h2 className="title wow fadeInUp" data-wow-delay=".5s">MISER, JOUER</h2>
-                                <p className="wow fadeInUp" data-wow-delay=".8s">video games online</p>
+                                <h2 className="title wow fadeInUp" data-wow-delay=".5s">ANT BATTLE QUEEN</h2>
+                                <p className="wow fadeInUp" data-wow-delay=".8s">Stake, play and get rewards</p>
                                 <div className="slider__btn wow fadeInUp" data-wow-delay="1.2s">
-                                    <Link href="/contact" className="tg-btn-1"><span>miser</span></Link>
+                                    {/* connect-wallet start */}
+                                    <ConnectWallet />
+                                    {/* connect-wallet end */}
                                 </div>
                             </div>
                         </div>

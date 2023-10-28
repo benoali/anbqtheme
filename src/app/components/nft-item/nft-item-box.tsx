@@ -13,29 +13,34 @@ const NftItemBox = ({ item }: { item: INftType }) => {
         </div>
         <div className="nft-item__content">
           <h4 className="title">
-            <Link href="">ANBQ ANT CREATION</Link>
+            <Link href="">{item.title}</Link>
           </h4>
           <div className="nft-item__avatar">
             <div className="avatar-img">
-              <Link href="">
+              <span className="ant_block">
+                {item.description}...
+              </span>
+{/*              <Link href="">
                 <Image src={item.creator} alt="img" />
-              </Link>
+              </Link>*/}
             </div>
             <div className="avatar-name">
               <h5 className="name">
-                <Link href="">{item.creator_name}</Link>
+                {/*<Link href="">{item.creator_name}</Link>*/}
               </h5>
+{/*
               <span className="designation">Creator</span>
+*/}
             </div>
           </div>
           <div className="nft-item__bid">
             <div className="nft-item__price">
-              <p>
+{/*              <p>
                 {item.eth}
                 <span className="currency">Eth</span>
-              </p>
-              <Link href="" className="bid-btn">
-                Miser <i className="fas fa-long-arrow-alt-right"></i>
+              </p>*/}
+              <Link href={item.anchor} className="bid-btn">
+                 <i className="fas fa-long-arrow-alt-right"></i>
               </Link>
             </div>
           </div>

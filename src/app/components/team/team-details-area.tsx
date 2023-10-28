@@ -18,7 +18,7 @@ const TeamDetailsArea = () => {
                     <Dots/>
                 </div>
                 <div className="team__details-content">
-                    <span className="sub-title">our team member</span>
+                    {/*<span className="sub-title">our team member</span>*/}
                     <h2 className="title">Online Games for Everyone Find the Best MMOs FOR YOU.</h2>
                     <p>Lorem ipsum dolor sit amet, consteur adipiscing Duis elementum sollicitudin is yaugue euismods Nulla ullamcorper. Morbi pharetra tellus miolslis, tincidunt massa venenatis. Lorem Ipsum is simply dummyd the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s, when an unknown printer took a galley. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable.</p>
                     <p>Lorem ipsum dolor sit amet, consteur adipiscing Duis elementum sollicitudin is yaugue euismods Nulla ullamcorper. Morbi pharetra tellus miolslis, tincidunt massa venenatis. Lorem Ipsum is simply dummyd the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s, when an unknown printer took a galley. There are many variations of passages.</p>

@@ -1,11 +1,11 @@
-import img_1 from '@/assets/img/team/grayson_jhonson.jpg';
-import img_2 from '@/assets/img/team/lajee_asha.jpg';
-import img_3 from '@/assets/img/team/fabien_dubois.jpg';
-import img_4 from '@/assets/img/team/noah_nday.jpg';
-import img_5 from '@/assets/img/team/ouyinh_anh.jpg';
-import img_6 from '@/assets/img/team/bian_may.jpg';
-import img_7 from '@/assets/img/team/jaya_agarwal.jpg';
-import img_8 from '@/assets/img/team/marc_petit.jpg';
+import img_1 from '@/assets/img/team/bruce_willyams_re.jpg';
+import img_2 from '@/assets/img/team/lajee_asha_re.jpg';
+import img_3 from '@/assets/img/team/fabien_dubois_re.jpg';
+import img_4 from '@/assets/img/team/noah_nday_re.jpg';
+import img_5 from '@/assets/img/team/ouynh_anh_re.jpg';
+import img_6 from '@/assets/img/team/bian_mai_lan_re.jpg';
+import img_7 from '@/assets/img/team/jaya_agarwal_re.jpg';
+import img_8 from '@/assets/img/team/mar_petit_re.jpg';
 
 
 const team_data = [

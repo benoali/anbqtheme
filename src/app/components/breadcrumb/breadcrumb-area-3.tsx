@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import bg from '@/assets/img/bg/breadcrumb_bg02.jpg';
+import bg from '@/assets/img/bg/breadcramb022.jpg';
 
 // props type 
 type IProp = {
@@ -11,7 +11,7 @@ const BreadcrumbAreaThree = ({title,subtitle}:IProp) => {
   return (
     <section
       className="breadcrumb-area breadcrumb__hide-img"
-      data-background="assets/img/bg/breadcrumb_bg02.jpg"
+      data-background="assets/img/bg/breadcramb022.jpg"
       style={{backgroundImage:`url(${bg.src})`}}
     >
       <div className="container">

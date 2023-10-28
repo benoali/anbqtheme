@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '@/assets/img/logo/logo.png';
+import logo from '@/assets/img/logo/logo_anbq_tr.png';
 import icon_1 from '@/assets/img/icons/social_icon02.png';
 import icon_2 from '@/assets/img/icons/youtube.png';
 import icon_3 from '@/assets/img/icons/telegram.png';
@@ -19,12 +19,12 @@ const Footer = () => {
               <div className="footer-widget">
                 <div className="footer-logo logo">
                   <Link href="/contact">
-                    <Image src={logo} alt="Logo" width={40} height={40} />
+                    <Image src={logo} alt="Logo" width={160} height={36} />
                   </Link>
                 </div>
                 <div className="footer-text">
-                  <p className="desc">Lorem ipsum dolor sitamet consectur adipiscing Duis esollici tudin augue euismod. Nulla ullam dolor sitamet consectetur</p>
-                  <p className="social-title">Active <span>With Us <i className="fas fa-angle-double-right"></i></span></p>
+                  <p className="desc">Plongez dans l&aposaventure et rejoignez notre communauté en pleine croissance.</p>
+                  <p className="social-title">Nous <span>SUIVRE <i className="fas fa-angle-double-right"></i></span></p>
                   <div className="footer-social">
                     <Link href="https://x.com/AntBattleQueen?s=07"><Image src={icon_1} alt="Twitter" width={30} height={30} /></Link>
                     <Link href="https://youtube.com/@AntBattleQueen?si=qNpl5uzxmZ7SWoj7"><Image src={icon_2} alt="Youtube" width={30} height={30} /></Link>
@@ -39,25 +39,22 @@ const Footer = () => {
               <div className="footer-widget widget_nav_menu">
                 <h4 className="fw-title">quick link</h4>
                 <ul className="list-wrap menu">
-                  <li><Link href="#">Gaming</Link></li>
-                  <li><Link href="#">Product</Link></li>
-                  <li><Link href="#">All NFTs</Link></li>
-                  <li><Link href="#">Social Network</Link></li>
-                  <li><Link href="#">Domain Names</Link></li>
-                  <li><Link href="#">Collectibles</Link></li>
+                  <li><Link href="#how2earn">Comment gagner</Link></li>
+                  <li><Link href="#roadmap-map-area">Feuille de route</Link></li>
+                  <li><Link href="/white-paper">Page blanche</Link></li>
+                  <li><Link href="#contrat-token">Distribution des jetons</Link></li>
                 </ul>
               </div>
             </div>
             <div className="col-xl-2 col-lg-3 col-md-5 col-sm-6">
               <div className="footer-widget widget_nav_menu">
-                <h4 className="fw-title">Supports</h4>
+                <h4 className="fw-title">Support</h4>
                 <ul className="list-wrap menu">
-                  <li><Link href="#">Setting & Privacy</Link></li>
-                  <li><Link href="#">Help & Support</Link></li>
-                  <li><Link href="#">Live Auctions</Link></li>
-                  <li><Link href="#">Item Details</Link></li>
-                  <li><Link href="#">24/7 Supports</Link></li>
-                  <li><Link href="#">Our News</Link></li>
+                  <li><Link href="/contact">Contact</Link></li>
+                  <li><Link href="/white-paper">Page Blanche</Link></li>
+                  <li><Link href="#">EtherScan</Link></li>
+                  <li><Link href="#">TokenSnifer</Link></li>
+                  <li><Link href="#">SolidityScan</Link></li>
                 </ul>
               </div>
             </div>
@@ -65,9 +62,9 @@ const Footer = () => {
               <div className="footer-widget">
                 <h4 className="fw-title">Newsletter</h4>
                 <div className="footer-newsletter">
-                  <p>Subscribe our newsletter to get our latest update & newsconsectetur</p>
+                  <p>Inscrivez-vous à la newsletter, et ne ratez plus aucune nouveauté</p>
                   <form action="#" className="footer-newsletter-form">
-                    <input type="email" placeholder="Your email address" />
+                    <input type="email" placeholder="Adresse Email" />
                     <button type="submit"><i className="flaticon-paper-plane"></i></button>
                   </form>
                 </div>

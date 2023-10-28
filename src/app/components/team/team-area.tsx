@@ -15,8 +15,8 @@ const TeamArea = () => {
         <div className="row justify-content-center">
           <div className="col-xl-6 col-lg-7 col-md-10">
             <div className="section__title text-center mb-60">
-              <TextAnimation title="our team member" />
-              <h3 className="title">ACTIVE TEAM MEMBERS</h3>
+              {/*<TextAnimation title="our team member" />*/}
+              <h3 className="title">EQUIPE DE TRAVAIL</h3>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ const TeamArea = () => {
                   </h4>
                   <span className="designation">{t.subtitle}</span>
                   {t.linkedin != '' &&
-                      <Link href={t.linkedin} target="_blank">linkedin</Link>
+                    <Link href={t.linkedin} target="_blank"><i className="fab fa-linkedin-in"></i></Link>
                   }
                 </div>
               </div>

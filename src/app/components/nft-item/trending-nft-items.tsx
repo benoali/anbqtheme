@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Image from 'next/image';
 import nft_data from '@/data/nft-data';
+import trending_data from '@/data/trending-data';
 import fire_img from '@/assets/img/icons/fire.png';
 
 
@@ -48,7 +49,7 @@ const TrendingNftItems = () => {
                     <div className="row">
                         <div className="col-md-7">
                             <div className="trendingNft__title">
-                                <h2 className="title">top Trending <Image src={fire_img} width="35" alt="icon"/></h2>
+                                <h2 className="title">Tendances <Image src={fire_img} width="35" alt="icon"/></h2>
                             </div>
                         </div>
                         <div className="col-md-5">
@@ -60,19 +61,19 @@ const TrendingNftItems = () => {
                     </div>
                 </div>
                 <Swiper {...slider_setting} modules={[Navigation]} className="swiper-container trendingNft-active">
-                    {nft_data.filter(i => i.trending).map((item) => (
+                    {trending_data.map((item) => (
                         <SwiperSlide key={item.id}>
                             <div className="trendingNft__item">
                                 <div className="trendingNft__item-top">
                                     <div className="trendingNft__item-avatar">
                                         <div className="image">
-                                            <Link href="/shop-details">
+{/*                                            <Link href="/shop-details">
                                                 <Image src={item.creator} alt="img"/>
-                                            </Link>
+                                            </Link>*/}
                                         </div>
                                         <div className="info">
                                             <h6 className="name">{item.title}</h6>
-                                            <Link href="/shop-details" className="userName">@{item.creator_name}</Link>
+                                            {/*<Link href="/shop-details" className="userName">@{item.creator_name}</Link>*/}
                                         </div>
                                     </div>
                                     <div className="trendingNft__item-wish">
@@ -80,17 +81,21 @@ const TrendingNftItems = () => {
                                     </div>
                                 </div>
                                 <div className="trendingNft__item-image">
+{/*
                                     <Link href="/shop-details">
+*/}
                                         <Image src={item.img} alt="img" style={{width:'100%',height:'auto'}} />
+{/*
                                     </Link>
+*/}
                                 </div>
-                                <div className="trendingNft__item-bottom">
+{/*                                <div className="trendingNft__item-bottom">
                                     <div className="trendingNft__item-price">
                                         <span className="bid">Last Bid</span>
                                         <h6 className="eth"><i className="fab fa-ethereum"></i> {item.eth} <span>Eth</span></h6>
                                     </div>
                                     <Link href="/shop-details" className="bid-btn">Bid <i className="fas fa-long-arrow-alt-right"></i></Link>
-                                </div>
+                                </div>*/}
                             </div>
                         </SwiperSlide>
                     ))}

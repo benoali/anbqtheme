@@ -15,10 +15,12 @@ import TokenDist from "./components/token-dist/token-dist";
 import ConnectWallet from "./components/connect-wallet/connect-wallet";
 import Footer from "@/layout/footer/footer";
 
+
 import '@rainbow-me/rainbowkit/styles.css';
 import {
     getDefaultWallets,
     RainbowKitProvider,
+    darkTheme,
 } from '@rainbow-me/rainbowkit';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import {
@@ -55,7 +57,13 @@ const wagmiConfig = createConfig({
 export default function Home() {
   return (
     <WagmiConfig config={wagmiConfig}>
-        <RainbowKitProvider chains={chains}>
+        <RainbowKitProvider chains={chains} theme={darkTheme({
+            accentColor: '#7b3fe4',
+            accentColorForeground: 'white',
+            borderRadius: 'small',
+            fontStack: 'system',
+            overlayBlur: 'small',
+        })} >
     <Wrapper>
       {/* header start */}
       <Header />
@@ -66,10 +74,6 @@ export default function Home() {
         {/* hero banner start */}
         <HeroBanner />
         {/* hero banner end */}
-
-        {/* connect-wallet start */}
-        <ConnectWallet />
-        {/* connect-wallet end */}
 
         {/* nft item area start */}
         <NftItemArea />
@@ -85,11 +89,15 @@ export default function Home() {
           style={{ backgroundImage: `url(${area_bg.src})` }}
         >
           {/* about-area */}
+{/*
           <AboutArea />
+*/}
           {/* about-area-end */}
 
           {/* gallery area start */}
+{/*
           <GalleryArea />
+*/}
           {/* gallery area end */}
         </div>
         {/* area-background-end */}

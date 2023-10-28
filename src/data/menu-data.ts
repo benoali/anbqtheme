@@ -19,15 +19,15 @@ const menu_data:IMenuDataType[] = [
     //   {title:'Home Two',link:'/home-2'},
     // ]
   },
-  {
+ /* {
     id:2,
     title:'NOUS CONNAITRE',
     link:'#about',
-  },
+  },*/
   {
     id:3,
-    title:'COMMENT CA MARCHE',
-    link:'#ccm',
+    title:'COMMENT GAGNER',
+    link:'#how2earn',
     // sub_menu:[
     //   {title:'TOURNAMENT',link:'/tournament'},
     //   {title:'TOURNAMENT Single',link:'/tournament-details'},
@@ -36,8 +36,17 @@ const menu_data:IMenuDataType[] = [
 
   {
     id:3,
-    title:'ROADMAP',
+    title:'FEUILLE DE ROUTE',
     link:'#roadmap-map-area',
+    // sub_menu:[
+    //   {title:'TOURNAMENT',link:'/tournament'},
+    //   {title:'TOURNAMENT Single',link:'/tournament-details'},
+    // ]
+  },
+  {
+    id:3,
+    title:'PAGE BLANCHE',
+    link:'/white-paper',
     // sub_menu:[
     //   {title:'TOURNAMENT',link:'/tournament'},
     //   {title:'TOURNAMENT Single',link:'/tournament-details'},
@@ -66,8 +75,8 @@ const menu_data:IMenuDataType[] = [
   // },
   {
     id:6,
-    title:'NOTRE EQUIPE',
-    link:'#team',
+    title:'DISTRIBUTION DES JETONS',
+    link:'#contrat-token',
   },
   {
     id:7,
