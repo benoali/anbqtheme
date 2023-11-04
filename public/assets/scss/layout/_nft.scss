@@ -16,7 +16,9 @@
     }
     &__box {
         @include flexbox();
+        /*
         align-items: flex-end;
+        */
         background-color: #121a23;
         background-image: -moz-linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%);
         background-image: -webkit-linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%);
@@ -25,6 +27,7 @@
         border: 1px solid rgb(76, 76, 76, .2);
         padding: 25px;
         margin: 0 0 30px;
+        min-height: 261px;
         @include transition(.3s);
         @media #{$xs} {
             display: block;
@@ -47,7 +50,7 @@
     &__thumb {
         flex: 0 0 auto;
         margin-right: 20px;
-        max-width: 187px;
+        max-height: 185px !important;
         @media #{$xxl} {
             max-width: 165px;
         }
@@ -73,6 +76,7 @@
             font-size: 20px;
             letter-spacing: .5px;
             margin: 0 0 15px;
+            min-height: 55px;
         }
     }
     &__avatar {
@@ -126,7 +130,9 @@
         background-image: -webkit-linear-gradient(90deg, rgb(12, 14, 18) 0%, rgb(16, 24, 31) 100%);
         background-image: -ms-linear-gradient(90deg, rgb(12, 14, 18) 0%, rgb(16, 24, 31) 100%);
         @include border-radius(8px);
+        /*
         border: 1px solid rgb(76, 76, 76, .5);
+        */
         padding: 14px 15px 14px 20px;
         & p {
             margin: 0 0;
@@ -223,7 +229,7 @@
         background-size: contain;
         background-position: center;
         max-width: 403px;
-        height: 426px;
+        height: 436px;
         padding: 24px 20px;
         margin: 0 0 30px;
         @media #{$lg} {
@@ -363,4 +369,5 @@
 .ant_block {
     display: block;
     width: 245px;
+    min-height: 83px;
 }

@@ -8,8 +8,8 @@ const NftItemArea = () => {
         <section className="nft-item__area" id="how2earn">
             <div className="container custom-container">
                 <div className="section__title text-center mb-60">
+                    <h3 className="title">le 1er jeux NFT qui offre 8 moyens pour gagner</h3>
                     <TextAnimation title="gagner jusqu a 25K$ par mois" />
-                    <h3 className="title">Le 1<sup>er</sup> jeux NFT qui offre 8 moyens pour gagner</h3>
                 </div>
                 <div className="row justify-content-center">
                     {nft_data.map((item) => (

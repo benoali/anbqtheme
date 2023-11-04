@@ -7,13 +7,11 @@ const NftItemBox = ({ item }: { item: INftType }) => {
   return (
       <div className="nft-item__box">
         <div className="nft-item__thumb">
-          <Link href="">
-            <Image src={item.img} alt="img" />
-          </Link>
+            <Image src={item.img} width={223} height={247} alt={item.title} />
         </div>
         <div className="nft-item__content">
           <h4 className="title">
-            <Link href="">{item.title}</Link>
+            {item.title}
           </h4>
           <div className="nft-item__avatar">
             <div className="avatar-img">

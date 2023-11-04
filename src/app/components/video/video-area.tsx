@@ -19,9 +19,9 @@ const VideoArea = () => {
                   <i className="flaticon-play"></i>
                 </a>
                 <h2 className="title">
-                  REJOINDRE <span>LA COMMUNAUTE</span>
+                  Le seul jeux NFT qui garantit la distribution de <span>80% des recettes sur les gains des joueurs</span>
                 </h2>
-                <p>Join our Discord community and choosec onsteur</p>
+                <p>Référencez vos amis et gagnez 10% de leur investissement</p>
 {/*                <a
                   href="https://discord.com/"
                   target="_blank"

@@ -3,9 +3,9 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { InView } from "react-intersection-observer";
-import bg from "@/assets/img/bg/roadmap_bg_2.jpg";
+import bg from "@/assets/img/bg/bg_roadmap.jpg";
 import road_map from "@/assets/img/others/roadmpa2.png";
-import road_map_step from "@/assets/img/others/roadmap_img.png";
+import road_map_step from "@/assets/img/others/roadmpa_img2.png";
 import useTextAnimation from "@/hooks/use-text-animation";
 
 // road map lists
@@ -26,8 +26,8 @@ const road_map_lists: IRoadMap[] = [
     lists: [
       { active: true, text: "Lancement du projet" },
       { active: true, text: "Lancement de la prévente privée du jeton ANBQ" },
-      { active: true, text: "Lancement de la prévente public du jeton ANBQ" },
-      { active: true, text: "Lancement de l’airDrop" },
+      { active: false, text: "Lancement de la prévente public du jeton ANBQ" },
+      { active: false, text: "Lancement de l’airDrop" },
       { active: false, text: "à la fin de cette étape, les fonds essentiels au lancement du projet et le\n" +
             "soutien communautaire sera notre clé pour finaliser le développement de la\n" +
             "plateforme et du jeu." },
@@ -38,10 +38,10 @@ const road_map_lists: IRoadMap[] = [
     active: false,
     title: "Lancement du jeu version Beta T2 2024",
     lists: [
-      { active: true, text: "Atteindre les 50 000 joueurs" },
-      { active: true, text: "Mettre de la liquidité adéquate dans les différentes plateformes de swap\n" +
+      { active: false, text: "Atteindre les 50 000 joueurs" },
+      { active: false, text: "Mettre de la liquidité adéquate dans les différentes plateformes de swap\n" +
             "décentralisées pour assurer la stabilité du jeton" },
-      { active: true, text: "Distribution de l’airDrop" },
+      { active: false, text: "Distribution de l’airDrop" },
     ],
   },
   {
@@ -132,6 +132,7 @@ const RoadMapArea = () => {
                                 src={road_map_step}
                                 alt="img"
                                 className="roadMap__steps-img"
+                                height={235}
                             />
                           </div>
                       ))}

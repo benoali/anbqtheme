@@ -84,7 +84,7 @@ const TrendingNftItems = () => {
 {/*
                                     <Link href="/shop-details">
 */}
-                                        <Image src={item.img} alt="img" style={{width:'100%',height:'auto'}} />
+                                        <Image src={item.img} alt="img" style={{width:'92%',height:'auto'}} />
 {/*
                                     </Link>
 */}

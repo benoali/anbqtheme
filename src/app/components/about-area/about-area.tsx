@@ -1,22 +1,27 @@
 'use client'
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
-import about_1 from "@/assets/img/others/about_tab01.png";
-import about_2 from "@/assets/img/others/about_tab02.png";
-import about_3 from "@/assets/img/others/about_tab03.png";
-import about_4 from "@/assets/img/others/about_tab04.png";
-import about_5 from "@/assets/img/others/about_tab05.png";
-import about_6 from "@/assets/img/others/about_tab06.png";
-import about_bg_1 from "@/assets/img/others/about_img01.jpg";
-import about_bg_2 from "@/assets/img/others/about_img02.jpg";
-import about_bg_3 from "@/assets/img/others/about_img03.jpg";
-import about_bg_4 from "@/assets/img/others/about_img04.jpg";
-import about_bg_5 from "@/assets/img/others/about_img05.jpg";
-import about_bg_6 from "@/assets/img/others/about_img06.jpg";
-import icon_1 from "@/assets/img/icons/features_icon01.png";
-import icon_2 from "@/assets/img/icons/features_icon02.png";
-import icon_3 from "@/assets/img/icons/features_icon03.png";
+import img1 from "@/assets/img/presentedby/coindesk.png";
+import img2 from "@/assets/img/presentedby/cryptonews.png";
+import img3 from "@/assets/img/presentedby/cointelepgraph.png";
+import img4 from "@/assets/img/presentedby/newsbtc.png";
+import img5 from "@/assets/img/presentedby/techopedia.png";
+
+import imgsoon1 from "@/assets/img/presentedsoon/soon11.png";
+import imgsoon2 from "@/assets/img/presentedsoon/soon12.png";
+import imgsoon3 from "@/assets/img/presentedsoon/soon13.png";
+import imgsoon4 from "@/assets/img/presentedsoon/soon14.png";
+import imgsoon5 from "@/assets/img/presentedsoon/soon15.png";
+import imgsoon6 from "@/assets/img/presentedsoon/soon16.png";
+import imgsoon7 from "@/assets/img/presentedsoon/soon17.png";
+import imgsoon8 from "@/assets/img/presentedsoon/soon18.png";
+import imgsoon9 from "@/assets/img/presentedsoon/soon19.png";
+
+import introduit1 from "@/assets/img/presentedsoon/introduit11.png";
+import introduit2 from "@/assets/img/presentedsoon/introduit12.png";
+import introduit3 from "@/assets/img/presentedsoon/introduit13.png";
+import introduit4 from "@/assets/img/presentedsoon/introduit14.png";
+
 import TextAnimation from "../common/text-animation";
 
 // nav button
@@ -57,65 +62,6 @@ type ITabProps = {
   rate: string;
   isActive?: boolean;
 }
-function TabItem({id,img,title,rate,isActive}:ITabProps) {
-  return (
-    <div
-      className={`tab-pane ${isActive ? "show active" : ""}`}
-      id={`about${id}`}
-      role="tabpanel"
-      aria-labelledby={`about${id}-tab`}
-    >
-      <div className="row justify-content-center">
-        <div className="col-xl-5 col-lg-10">
-          <div className="about__img">
-            <Image src={img} alt="img" />
-          </div>
-        </div>
-        <div className="col-xl-7 col-lg-10">
-          <div className="about__flex-wrap">
-            <div className="about__content-wrap">
-              <div className="about__content">
-                <h4 className="title">{title}</h4>
-                <span className="rate">rate {rate}</span>
-                <p>
-                  Lorem ipsum dolor sit amet, consteur adipiscing Duis elementum
-                  sollicitudin is yaugue euismods Nulla ullamcorper. Morbi
-                  pharetra tellus miolslis, tincidunt massa venenatis.
-                </p>
-              </div>
-              <div className="about__content-list">
-                <ul className="list-wrap">
-                  <li>
-                    <Image src={icon_1} alt="img" /> Chichi Dragon Ball
-                  </li>
-                  <li>
-                    <Image src={icon_2} alt="img" /> Space Babe Night
-                  </li>
-                  <li>
-                    <Image src={icon_3} alt="img" /> Dragon Ball
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="about__btn-wrap">
-              <ul className="list-wrap">
-                <li>
-                  <Link href="/shop-details">Dragon Ball</Link>
-                </li>
-                <li>
-                  <Link href="/shop">nft market</Link>
-                </li>
-                <li>
-                  <Link href="/contact">support</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 const AboutArea = () => {
   return (
@@ -124,46 +70,114 @@ const AboutArea = () => {
         <div className="row justify-content-center">
           <div className="col-xl-6 col-lg-7 col-md-10">
             <div className="section__title text-center mb-60">
-              <TextAnimation title="know about us" />
-              <h3 className="title">top rated steamers</h3>
+              <TextAnimation title="" />
+              <h3 className="title">Présenté par</h3>
             </div>
           </div>
         </div>
         <div className="row justify-content-center">
           <div className="col-xl-10">
             <div className="about__tab-wrap">
-              <div className="about__buttons">
+{/*              <div className="about__buttons">
                 <Link href="/shop" className="tg-btn-2">
                   buy Hero
                 </Link>
                 <Link href="/shop" className="tg-btn-2 -secondary">
                   buy nfts
                 </Link>
-              </div>
+              </div>*/}
               <ul className="nav nav-tabs" id="myTab" role="tablist">
-                <NavBtn id="01" img={about_1} isActive={true} />
-                <NavBtn id="02" img={about_2} />
-                <NavBtn id="03" img={about_3} />
-                <NavBtn id="04" img={about_4} />
-                <NavBtn id="05" img={about_5} />
-                <NavBtn id="06" img={about_6} />
+                <li><Image src={img1} alt="Coin Desk" width={250} /></li>
+                <li><Image src={img2} alt="cryptonews" width={270}  /></li>
+                <li><Image src={img3} alt="cointelepgraph" width={270}  /></li>
+                <li><Image src={img4} alt="newsbtc" width={220}  /></li>
+                <li><Image src={img5} alt="techopedia" width={250}  /></li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="tab-content" id="myTabContent">
-          <TabItem
-            id="01"
-            img={about_bg_1}
-            isActive={true}
-            title="human game"
-            rate="50%"
-          />
-          <TabItem id="02" img={about_bg_2} title="Axie Infinity" rate="60%" />
-          <TabItem id="03" img={about_bg_3} title="The Walking Dead" rate="75%"/>
-          <TabItem id="04" img={about_bg_4} title="The Dogami" rate="65%" />
-          <TabItem id="05" img={about_bg_5} title="The Sandbox" rate="85%" />
-          <TabItem id="06" img={about_bg_6} title="Pegaxy Horses" rate="90%" />
+      </div>
+<br />
+<br />
+<br />
+
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-xl-6 col-lg-7 col-md-10">
+            <div className="section__title text-center mb-60">
+              <TextAnimation title="" />
+              <h3 className="title">Introduit dans</h3>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-xl-10">
+            <div className="about__tab-wrap">
+              {/*              <div className="about__buttons">
+                <Link href="/shop" className="tg-btn-2">
+                  buy Hero
+                </Link>
+                <Link href="/shop" className="tg-btn-2 -secondary">
+                  buy nfts
+                </Link>
+              </div>*/}
+              <ul className="nav nav-tabs" id="myTab" role="tablist">
+                {/*
+                <Image src={imgsoon1} alt="binance" width={210} />
+*/}
+                <Image src={introduit1} alt="" width={120}  />
+                <Image src={introduit2} alt="" width={120}  />
+                <Image src={introduit3} alt="" width={120}  />
+                <Image src={introduit4} alt="" width={120}  />
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-xl-6 col-lg-7 col-md-10">
+            <div className="section__title text-center mb-60">
+              <TextAnimation title="" />
+              <h3 className="title">Prochainement dans</h3>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-xl-10">
+            <div className="about__tab-wrap">
+              {/*              <div className="about__buttons">
+                <Link href="/shop" className="tg-btn-2">
+                  buy Hero
+                </Link>
+                <Link href="/shop" className="tg-btn-2 -secondary">
+                  buy nfts
+                </Link>
+              </div>*/}
+              <ul className="nav nav-tabs" id="myTab" role="tablist">
+{/*
+                <Image src={imgsoon1} alt="binance" width={210} />
+*/}
+                <Image src={imgsoon2} alt="" width={120}  />
+                <Image src={imgsoon3} alt="" width={120}  />
+                <Image src={imgsoon4} alt="" width={120}  />
+                <Image src={imgsoon5} alt="" width={120}  />
+                <Image src={imgsoon1} alt="" width={120}  />
+                <Image src={imgsoon6} alt="" width={120}  />
+                <Image src={imgsoon7} alt="" width={120}  />
+                <Image src={imgsoon8} alt="" width={120}  />
+                <Image src={imgsoon9} alt="" width={120}  />
+{/*
+                <Image src={imgsoon8} alt="xt" width={200}  />
+*/}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>

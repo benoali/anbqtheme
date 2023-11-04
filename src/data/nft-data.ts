@@ -116,7 +116,7 @@ const nft_data:INftType[] = [
   {
     id:8,
     img:nft_8,
-    title:'Parrainage:',
+    title:'Parrainage',
     description:'A chaque fois où un joueur vous ajoute comme référence',
     creator:avatar_1,
     creator_name:'Jon Max',

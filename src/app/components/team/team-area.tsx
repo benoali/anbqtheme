@@ -2,8 +2,9 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import team_data from "@/data/team-data";
-import bg from '@/assets/img/bg/team_bg.jpg';
+import bg from '@/assets/img/bg/bg_team.jpg';
 import TextAnimation from "../common/text-animation";
+
 
 const TeamArea = () => {
   return (
@@ -39,7 +40,7 @@ const TeamArea = () => {
                   </h4>
                   <span className="designation">{t.subtitle}</span>
                   {t.linkedin != '' &&
-                    <Link href={t.linkedin} target="_blank"><i className="fab fa-linkedin-in"></i></Link>
+                    <Link href={t.linkedin} target="_blank">linkedin</Link>
                   }
                 </div>
               </div>

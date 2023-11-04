@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '@/assets/img/logo/logo.png';
+import logo from '@/assets/img/logo/logo_anbq_tr.png';
 import social_data from '@/data/social-data';
 
 // prop type 
@@ -24,7 +24,7 @@ const OffCanvas = ({isOffCanvasOpen,setIsOffCanvasOpen}:IProps) => {
               <div className="offCanvas__top">
                   <div className="offCanvas__logo logo">
                       <Link href="/">
-                        <Image src={logo} alt="Logo" width={40} height={40} />
+                        <Image src={logo} alt="Logo" width={170} height={40} />
                       </Link>
                   </div>
                   <div className="offCanvas__toggle" onClick={() => handleCloseOffCanvas('/assets/audio/remove.wav')}>
@@ -32,9 +32,9 @@ const OffCanvas = ({isOffCanvasOpen,setIsOffCanvasOpen}:IProps) => {
                   </div>
               </div>
               <div className="offCanvas__content">
-                  <h2 className="title">Best Seller of Month Ideas for <span>NFT Wallet</span></h2>
+                  <h2 className="title">Référencez vos amis et gagnez 10% de  <span>leur investissement</span></h2>
                   <div className="offCanvas__contact">
-                      <h4 className="small-title">CONTACT US</h4>
+                      <h4 className="small-title">NOUS CONTACTER</h4>
                       <ul className="offCanvas__contact-list list-wrap">
                           <li><Link href="tel:0033764538495">0033764538495</Link></li>
                           <li><Link href="mailto:info@webmail.com">walid@mail.com</Link></li>
@@ -42,12 +42,12 @@ const OffCanvas = ({isOffCanvasOpen,setIsOffCanvasOpen}:IProps) => {
                       </ul>
                   </div>
                   <div className="offCanvas__newsletter">
-                      <h4 className="small-title">Subscribe</h4>
+                      <h4 className="small-title">Souscrire</h4>
                       <form action="#" className="offCanvas__newsletter-form">
-                          <input type="email" placeholder="Get News & Updates"/>
+                          <input type="email" placeholder="Email"/>
                           <button type="submit"><i className="flaticon-send"></i></button>
                       </form>
-                      <p>Subscribe dolor sitamet, consectetur adiping eli. Duis esollici tudin augue.</p>
+                      <p>Inscrivez-vous à la newsletter, et ne ratez plus aucune nouveauté.</p>
                   </div>
                   <ul className="offCanvas__social list-wrap">
                     {social_data.map((s,i) => (

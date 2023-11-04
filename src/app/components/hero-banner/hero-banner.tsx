@@ -3,7 +3,7 @@ import React,{useState} from 'react';
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 import { MouseParallaxContainer,MouseParallaxChild } from 'react-parallax-mouse';
-import slider_bg from '@/assets/img/slider/bg_slider.jpg';
+import slider_bg from '@/assets/img/slider/bg_slider_n.jpg';
 /*
 import slider_bg from '@/assets/img/slider/slider_bg.jpg';
 */

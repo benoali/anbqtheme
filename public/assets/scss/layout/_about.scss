@@ -20,6 +20,88 @@
         padding-bottom: 100px;
     }
 }
+.addressContract {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 0 0 30px;
+    font-size: 16px;
+    font-weight: var(--tg-fw-medium);
+    color: #fefefe;
+    letter-spacing: .9px;
+}
+.contract {
+    font-size: 20px;
+    font-weight: var(--tg-fw-medium);
+    width: 62%;
+    margin: 8px 0;
+}
+.recompences {
+    color: #C09558;
+}
+.proprietaire {
+    color: #ED7E08;
+}
+.equipe {
+    color: #9E2835;
+}
+.liquidite {
+    color: #1A567B;
+}
+.prevente {
+    color: #4D8341;
+}
+.prive {
+    color: #5E4675;
+}
+.gg-copy {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 14px;
+    height: 18px;
+    border: 2px solid;
+    margin-left: -5px;
+    margin-top: -4px;
+    float: right;
+    cursor: pointer;
+}
+.gg-copy::after,
+.gg-copy::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-copy::before {
+    background:
+            linear-gradient( to left,
+                    currentColor 5px, transparent 0)
+            no-repeat right top/5px 2px,
+            linear-gradient( to left,
+                    currentColor 5px, transparent 0)
+            no-repeat left bottom/ 2px 5px;
+    color: #999999;
+    box-shadow: inset -4px -4px 0 -2px;
+    bottom: -6px;
+    right: -6px;
+    width: 14px;
+    height: 18px
+}
+.gg-copy::after {
+    width: 6px;
+    height: 2px;
+    background: currentColor;
+    left: 2px;
+    top: 2px;
+    box-shadow: 0 4px 0,0 8px 0
+}
+
+.dist2 {
+    width: 50%;
+    float: left;
+}
 .about {
     &__buttons {
         display: flex;

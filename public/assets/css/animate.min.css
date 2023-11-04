@@ -3177,7 +3177,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   border-radius: 8px;
   max-height: 232px;
   max-width: 184px;
+  /*
   background-color: #FFCD66;
+  */
 }
 
 .nft-item__thumb {
